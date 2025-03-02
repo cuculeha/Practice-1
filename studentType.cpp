@@ -69,7 +69,7 @@ void studentType :: print () const
 bool studentType :: equalData (const studentType &another) const
 {
   if (gpa == another.gpa && id == another.id && classification == another.classification &&
-        personType :: equalData(another));
+        personType :: equalData(another))
     return true;
 
   else
