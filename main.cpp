@@ -41,6 +41,7 @@ int main ()
       cout << "\nGender  : ";
       cin.get (chartoInput);
       person[i].setGender (chartoInput);
+      cin.ignore (100, '\n');
     }
   
   for (int i =0 ; i < 3; i ++)
@@ -70,6 +71,7 @@ int main ()
       cout << "\nGender  : ";
       cin.get (chartoInput);
       student[i].setGender (chartoInput);
+      cin.ignore (100, '\n');
 
       cout << "/nGPA : ";
       cin >> doubletoInput;
