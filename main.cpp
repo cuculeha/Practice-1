@@ -45,7 +45,7 @@ int main ()
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-      person[i].setGender (stringtoInput);
+      person[i].setGender (chartoInput);
       cout << endl;
     }
   
@@ -80,7 +80,7 @@ int main ()
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-      student[i].setGender (stringtoInput);
+      student[i].setGender (chartoInput);
       cout << endl;
 
       cout << "GPA : ";
