@@ -1,5 +1,5 @@
-#ifndef STUDENTYPE_H
-#define STUDENTYPE_H
+#ifndef STUDENTTYPE_H
+#define STUDENTTYPE_H
 
 #include <iostream>
 #include "personType.h"
