@@ -54,49 +54,49 @@ int main ()
       cout << "\nInput information for studentType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
       getline (cin, stringtoInput);
-      studentType[i].setFName (stringtoInput);
+      student[i].setFName (stringtoInput);
       cout << endl;
 
       cout << "Last Name : ";
       getline (cin, stringtoInput);
-      studentType[i].setLName (stringtoInput);
+      student[i].setLName (stringtoInput);
       cout << endl;
 
       cout << "Address   : ";
       getline (cin, stringtoInput);
-      studentType[i].setAddress (stringtoInput);
+      student[i].setAddress (stringtoInput);
       cout << endl;
 
       cout << "Height : ";
       cin >> doubletoInput;
-      studentType[i].setHeight (doubletoInput);
+      student[i].setHeight (doubletoInput);
       cin.ignore();
       cout << endl;
       
       cout << "DOB    : ";
       getline (cin, stringtoInput);
-      studentType[i].setDOB (stringtoInput);
+      student[i].setDOB (stringtoInput);
       cout << endl;
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-      studentType[i].setDOB (stringtoInput);
+      student[i].setDOB (stringtoInput);
       cout << endl;
 
       cout << "GPA : ";
       cin >> doubletoInput;
-      studentType[i].setHGPA (doubletoInput);
+      student[i].setHGPA (doubletoInput);
       cin.ignore();
       cout << endl;
 
       cout << "Student ID : ";
       getline (cin, stringtoInput);
-      studentType[i].setID (stringtoInput);
+      student[i].setID (stringtoInput);
       cout << endl;
 
       cout << "Classification   : ";
       getline (cin, stringtoInput);
-      studentType[i].setClassification (stringtoInput);
+      student[i].setClassification (stringtoInput);
       cout << endl;
 
       
