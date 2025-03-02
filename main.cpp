@@ -40,12 +40,12 @@ int main ()
       
       cout << "DOB    : ";
       getline (cin, stringtoInput);
-       person[i].setDOB (stringtoInput);
+      person[i].setDOB (stringtoInput);
       cout << endl;
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-      person[i].setDOB (stringtoInput);
+      person[i].setGender (stringtoInput);
       cout << endl;
     }
   
@@ -80,12 +80,12 @@ int main ()
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-      student[i].setDOB (stringtoInput);
+      student[i].setGender (stringtoInput);
       cout << endl;
 
       cout << "GPA : ";
       cin >> doubletoInput;
-      student[i].setHGPA (doubletoInput);
+      student[i].setGPA (doubletoInput);
       cin.ignore();
       cout << endl;
 
