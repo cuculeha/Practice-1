@@ -44,7 +44,9 @@ studentType:: studentType()
 
 studentType::studentType(string fName, string lName)
             : personType (fName, lName)
-
+{
+  // its empty.. 
+}
 studentType:: studentType(string fName, string lName, double studentGPA, string studentID, string studentCLS)
             : personType (fName, lName)
 {
