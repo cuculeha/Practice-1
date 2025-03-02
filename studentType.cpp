@@ -1,9 +1,9 @@
-#ifndef
+#include <iostream>
 #include "personType.h"
-#endif
-#ifndef
 #include "studentType.h"
-#endif
+
+using namespace std;
+
 void:: studentType setGPA (double studentGPA)
 {
   gpa = studentGPA;
