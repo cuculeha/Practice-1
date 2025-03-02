@@ -84,6 +84,16 @@ int main ()
       getline (cin, stringtoInput);
       student[i].setClassification (stringtoInput);
     }
+
+  // print all information
+  for (int i=0;  i < 2; i++)
+  {
+    person[i].print();
+  }
+  for (int i=0;  i < 2; i++)
+  {
+    student[i].print();
+  }
   
   return 0;
 }
