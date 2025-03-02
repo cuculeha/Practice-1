@@ -4,32 +4,32 @@
 
 using namespace std;
 
-void:: studentType setGPA (double studentGPA)
+void studentType :: setGPA (double studentGPA)
 {
   gpa = studentGPA;
 }
 
-void:: studentType setID (string studentID)
+void studentType ::setID (string studentID)
 {
   id = studentID;
 }
 
-void:: studentType setClassification (string studentCLS)
+void studentType :: setClassification (string studentCLS)
 {
   classification = studentCLS;
 }
 
-double:: studentType getGPA() const
+double studentType:: getGPA() const
 {
   return gpa;
 }
 
-string::studentType getID() const
+string studentType :: getID() const
 {
   return id;
 }
 
-string getClassification() const
+string studentType :: getClassification() const
 {
   return classification;
 }
