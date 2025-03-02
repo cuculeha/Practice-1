@@ -45,7 +45,7 @@ int main ()
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-       person[i].setDOB (chartoInput);
+       person[i].setDOB (stringtoInput);
       cout << endl;
     }
   
