@@ -66,7 +66,7 @@ void studentType :: print () const
   cout << "____________________________________________________________________\n";
 }
 
-bool equalData (const studentType &another) const
+bool studentTpe :: equalData (const studentType &another) const
 {
   if (gpa == another.gpa && id == another.id && classification == another.classification &&
         personType :: equalData(another));
