@@ -21,7 +21,7 @@ public:
   studentType(string fName, string lName, double studentGPA, string studentID, string studentCLS);
 
   void print()  const;
-  bool equalData (const personType &another) const;
+  bool equalData (const studentType &another) const;
 
 private:
   string id; //added every id 'should' be unique
