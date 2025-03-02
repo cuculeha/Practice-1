@@ -14,6 +14,12 @@ class studentType
   string getID() const;
   string getClassification() const;
 
+  studentType();
+  studentType(string, string);
+  studentType(string, string, double, string, string);
+
   void print()  const;
   bool equalData (const personType &person2) const;
 }
+
+#endif
