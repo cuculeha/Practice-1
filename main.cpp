@@ -19,33 +19,33 @@ int main ()
       cout << "\nInput information for personType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
       getline (cin, stringtoInput);
-      setFName (stringtoInput);
+      person[i].setFName (stringtoInput);
       cout << endl;
 
       cout << "Last Name : ";
       getline (cin, stringtoInput);
-      setLName (stringtoInput);
+      person[i].setLName (stringtoInput);
       cout << endl;
 
       cout << "Address   : ";
       getline (cin, stringtoInput);
-      setAddress (stringtoInput);
+       person[i].setAddress (stringtoInput);
       cout << endl;
 
       cout << "Height : ";
       cin >> doubletoInput;
-      setHeight ()
-      cin.ignore(doubletoInput);
+      person[i].setHeight (doubletoInput);
+      cin.ignore();
       cout << endl;
       
       cout << "DOB    : ";
       getline (cin, stringtoInput);
-      setDOB (stringtoInput);
+       person[i].setDOB (stringtoInput);
       cout << endl;
       
       cout << "Gender  : ";
       cin.get (chartoInput);
-      setDOB (chartoInput);
+       person[i].setDOB (chartoInput);
       cout << endl;
     }
   
