@@ -121,7 +121,6 @@ void personType :: print () const
 	cout << "Gender  : " << getGender() << endl;
 	cout << "DOB     : " << getDOB () << endl;
 	cout << "Height  : " << getHeight() << " inches\n";
-	cout << "-----------------------------------------------------\n";
 }
 
 
