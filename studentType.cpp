@@ -73,5 +73,5 @@ bool studentType :: equalData (const studentType &another) const
     return true;
 
   else
-    false;
+    return false;
 }
