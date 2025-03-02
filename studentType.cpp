@@ -1,8 +1,9 @@
 #ifndef
 #include "personType.h"
+#endif
+#ifndef
 #include "studentType.h"
 #endif
-
 void:: studentType setGPA (double studentGPA)
 {
   gpa = studentGPA;
