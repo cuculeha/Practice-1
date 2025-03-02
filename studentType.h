@@ -2,24 +2,31 @@
 #define STUDENTYPE_H
 
 #include <iostream>
+#include "personType.h"
 using namespace std;
 
-class studentType
+class studentType:public personType
 {
-  void setGPA (double);  
-  void setID (string);
-  void setClassification (string);
+public:
+  void setGPA (double studentGPA);  
+  void setID (string studentID);
+  void setClassification (string studentCLS);
 
   double getGPA() const;
   string getID() const;
   string getClassification() const;
 
   studentType();
-  studentType(string, string);
-  studentType(string, string, double, string, string);
+  studentType(string fName, string lName);
+  studentType(string fName, string lName, double studentGPA, string studentID, string studentCLS);
 
   void print()  const;
-  bool equalData (const personType &person2) const;
-}
+  bool equalData (const personType &another) const;
+
+private:
+  string id; //added every id 'should' be unique
+  double gpa;
+  string classification; 
+};
 
 #endif
