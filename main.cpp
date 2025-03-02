@@ -1,5 +1,6 @@
 //main.cpp
 #include <iostream>
+#include <cstdlib>
 #include "personType.h"
 #include "studentType.h"
 
@@ -86,7 +87,7 @@ int main ()
       getline (cin, stringtoInput);
       student[i].setClassification (stringtoInput);
     }
-
+system ("clear");
   // print all information
   for (int i=0;  i < 2; i++)
   {
