@@ -63,7 +63,6 @@ void studentType :: print () const
   cout << "Student GPA    : " << getGPA() << endl;
   cout << "Student ID     : " << getID() << endl;
   cout << "Classification : " << getClassification() << endl;
-  cout << "____________________________________________________________________\n";
 }
 
 bool studentType :: equalData (const studentType &another) const
