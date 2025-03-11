@@ -1,6 +1,6 @@
 #include<iostream>
 #include "personType.h"
-
+#include "professorType.h"
 using namespace std;
 
 void professorType:: setEmpID (string EmpID)
@@ -13,7 +13,7 @@ void professorType:: setDep (string dpt)
 	department = dpt;
 }
 
-void professorType:: setDegree (string EmpID)
+void professorType:: setDegree (string dg)
 {
 	degree = dg;
 }
@@ -37,9 +37,9 @@ string professorType :: getDegree () const
 void professorType :: print () const
 {
 	personType::print();
-	cout << "Employee ID : " << getEmpID();
-	cout << "Department  : " << getDep();
-	cout << "Degree      : " << getDegree();
+	cout << "Employee ID : " << getEmpID()<< endl;
+	cout << "Department  : " << getDep() << endl;
+	cout << "Degree      : " << getDegree() << endl;
 
 }
 

@@ -3,19 +3,20 @@
 #include "personType.h"
 #include "studentType.h"
 #include "professorType.h"
+#include "selectionSort.h"
 using namespace std;
 
 int main ()
 {
-  personType person[1];
-  studentType student[2];
-  professorType professor[2];
+  personType person[5];
+  studentType student[5];
+  professorType professor[5];
   
   string stringtoInput;
   double doubletoInput;
   char chartoInput;
   
-  for (int i =0 ; i < 1; i ++)
+  for (int i =0 ; i < 5; i ++)
     {
       cout << "Input information for personType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
@@ -45,7 +46,7 @@ int main ()
       cin.ignore (100, '\n');
     }
   
-  for (int i =0 ; i < 2; i ++)
+  /*for (int i =0 ; i < 2; i ++)
     {
       cout << "\nInput information for studentType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
@@ -91,7 +92,7 @@ int main ()
 
 for (int i =0 ; i < 2; i ++)
     {
-      cout << "\nInput information for professor object [" << i + 1 <<"]\n";
+      cout << "\nInput information for professorType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
       getline (cin, stringtoInput);
       professor[i].setFName (stringtoInput);
@@ -129,25 +130,37 @@ for (int i =0 ; i < 2; i ++)
       cout << "Degree  : ";
       getline (cin, stringtoInput);
       professor[i].setDegree (stringtoInput);
-    }
+    }*/
 
 system ("clear");
   // print all information
-  for (int i=0;  i < 1; i++)
-  {
+	cout << "Before Sorting\n";
+  for (int i=0;  i < 5; i++)
+  {	
+	cout << "---- > personType object\n";
     person[i].print();
     cout << "------------------------------------------------------------\n";
   }
-  for (int i=0;  i < 2; i++)
+  /*for (int i=0;  i < 2; i++)
   {
+	cout << "---- > studentType object\n";
     student[i].print();
     cout << "------------------------------------------------------------\n";
   }
 	for (int i=0;  i < 2; i++)
   {
+	cout << "---- > professorType object\n";
     professor[i].print();
     cout << "------------------------------------------------------------\n";
   }
-  
+  */
+	cout << "Ater Sorting..\n";
+	personTypeSort (person, 5);
+	for (int i=0;  i < 5; i++)
+  {	
+	cout << "---- > personType object\n";
+    person[i].print();
+    cout << "------------------------------------------------------------\n";
+  }	
   return 0;
 }

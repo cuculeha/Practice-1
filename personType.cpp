@@ -1,28 +1,13 @@
 #include <iostream>
 #include <iomanip>
 #include "personType.h"
-
 using namespace std;
 
-
 // Setters definition
-void personType :: setFName (string fN)
-{
-		fName = fN;
-}
-
-void personType :: setLName (string lN)
-{
-		lName = lN;
-}
-
-void personType :: setAddress (string addr )
-{
-		address = addr;
-}
-
-void personType :: setHeight (double ht)
-{
+void personType :: setFName (string fN) {	fName = fN; }
+void personType :: setLName (string lN)	{		lName = lN;	}
+void personType :: setAddress (string addr ){		address = addr;	}
+void personType :: setHeight (double ht)	{
 	if (ht < 10) {
 	height = 10;}
 
@@ -32,14 +17,9 @@ void personType :: setHeight (double ht)
 	else
 	height = ht;
 }
+void personType :: setDOB (string bdate){		DOB = bdate;	}
 
-void personType :: setDOB (string bdate)
-{
-		DOB = bdate;
-}
-
-void personType :: setGender (char gen)
-{
+void personType :: setGender (char gen)	{
 	if (gen != 'M' && gen != 'm' && gen != 'F' && gen != 'f')
 	{
 		gender = 'X';
@@ -49,38 +29,15 @@ void personType :: setGender (char gen)
 		gender = gen;
 }
 
-
 // Getters definition
-string personType :: getFName () const
-{
-	return fName;
-}
+string personType :: getFName () const	{	return fName; 	}
+string personType :: getLName () const	{	return lName;	}
+string personType :: getAddress () const	{	return address;	}
+double personType :: getHeight () const	{	return height;	}
+string personType :: getDOB () const	{	return DOB;	}
+char personType :: getGender () const	{	return gender;	}
 
-string personType :: getLName () const
-{
-	return lName;
-}
-
-string personType :: getAddress () const
-{
-	return address;
-}
-
-double personType :: getHeight () const
-{
-	return height;
-}
-
-string personType :: getDOB () const
-{
-	return DOB;
-}
-
-char personType :: getGender () const
-{
-	return gender;
-}
-
+// Constructors
 personType::personType ()
 {
 	fName = "UNSET";
@@ -112,7 +69,6 @@ personType:: ~personType ()
 	cout << fName << " " << lName << " object destroyed...\n";
 }
 
-
 // print function
 void personType :: print () const
 {
@@ -123,18 +79,15 @@ void personType :: print () const
 	cout << "Height  : " << getHeight() << " inches\n";
 }
 
-
 // equals strings
 bool personType :: equalData (const personType &person2) const
 {
 	if (fName == person2.fName && lName == person2.lName && address == person2.address &&
-		height == person2.height && DOB == person2.DOB && gender == person2.gender)
-		{
+		height == person2.height && DOB == person2.DOB && gender == person2.gender)	{
 			return true;
-		}
+	}
 
-	else
-		{
+	else	{
 			return false;
 		}
 }
