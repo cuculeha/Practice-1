@@ -9,8 +9,8 @@ using namespace std;
 int main ()
 {
   personType person[5];
-  studentType student[5];
-  professorType professor[5];
+  /*studentType student[5];
+  professorType professor[5]; */
   
   string stringtoInput;
   double doubletoInput;

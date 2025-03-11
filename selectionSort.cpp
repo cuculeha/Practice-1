@@ -7,6 +7,7 @@ using namespace std;
 
 void personTypeSort ( personType array[], int size)
 {
+	personType temp;
 	int startScan;
 	int minIndex;
 	string minString;      // can change based on what r we sorting on
@@ -20,12 +21,14 @@ void personTypeSort ( personType array[], int size)
 				for (int i = startScan + 1 ; i < size ; i++)
 					{
 						if (array[i].getFName() < minString)
+						{
 						minIndex = i;
-						minString = array[i].getFName();
+						}
 					}
 
-				array[minIndex].setFName (array[startScan].getFName() );
-				array[startScan].setFName ( minString );
+				temp =  array[startScan];
+				array[startScan] = array [minIndex];
+				array[minIndex] = temp;
 			}
 }
 
