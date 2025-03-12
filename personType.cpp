@@ -73,8 +73,9 @@ personType::personType (string firstName, string lastName, string addr, char gen
 // Destructor
 personType:: ~personType ()
 {
-	cout << fName << " " << lName << " object destroyed...\n";
+	//cout << fName << " " << lName << " object destroyed...\n";
 }
+
 
 // print function
 void personType :: print () const
