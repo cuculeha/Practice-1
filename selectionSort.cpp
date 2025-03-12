@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "selectionSort.h"
 #include "personType.h"
 #include "studentType.h"
@@ -86,6 +87,42 @@ void studentTypeName ( studentType array[], int size)
 						{
 						minIndex = i;
 						minString = array[i].getFullName ();
+						}
+					}
+
+				temp =  array[startScan];
+				array[startScan] = array [minIndex];
+				array[minIndex] = temp;
+			}
+}
+
+string convertUpperCase (string toMake)
+{
+	string copy = toMake;
+	transform (copy.begin(), copy.end(), copy.begin(), :: toupper );
+
+	return copy;
+}
+
+void studentTypeNameUppercase ( studentType array[], int size)
+{
+	studentType temp;
+	int startScan;
+	int minIndex;
+	string minString;      // can change based on what r we sorting on
+	
+		for (startScan = 0; startScan < size -1 ; startScan ++ )
+			{
+				minIndex = startScan;
+				minString = convertUpperCase(array[startScan].getFullName());
+
+
+				for (int i = startScan + 1 ; i < size ; i++)
+					{
+						if (convertUpperCase(array[i].getFullName()) < minString)
+						{
+						minIndex = i;
+						minString = convertUpperCase(array[i].getFullName ());
 						}
 					}
 

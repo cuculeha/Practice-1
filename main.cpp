@@ -164,7 +164,7 @@ system ("clear");
   }
   */
 	// call sorting function
-	studentTypeName (student, 5);
+	studentTypeNameUppercase (student, 5);
 	cout << "Sorting Full Names of student type object..\n";
 	for (int i=0;  i < 5; i++)
   {
