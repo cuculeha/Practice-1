@@ -1,47 +1,14 @@
-\hypertarget{classstudentType}{}\doxysection{student\+Type Class Reference}
-\label{classstudentType}\index{studentType@{studentType}}
+\hypertarget{classpersonType}{}\doxysection{person\+Type Class Reference}
+\label{classpersonType}\index{personType@{personType}}
 
 
-Inheritance diagram for student\+Type\+:
+Inheritance diagram for person\+Type\+:
 % FIG 0
 
 
-Collaboration diagram for student\+Type\+:
+Collaboration diagram for person\+Type\+:
 % FIG 1
 \doxysubsection*{Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classstudentType_a848657961c1cea0fc8857bc7c7faa46e}\label{classstudentType_a848657961c1cea0fc8857bc7c7faa46e}} 
-void {\bfseries set\+GPA} (double student\+GPA)
-\item 
-\mbox{\Hypertarget{classstudentType_abc2f6b8142d4d0c0f33589134c177021}\label{classstudentType_abc2f6b8142d4d0c0f33589134c177021}} 
-void {\bfseries set\+ID} (string student\+ID)
-\item 
-\mbox{\Hypertarget{classstudentType_a72169548d494182a31cf597aa80beadd}\label{classstudentType_a72169548d494182a31cf597aa80beadd}} 
-void {\bfseries set\+Classification} (string student\+CLS)
-\item 
-\mbox{\Hypertarget{classstudentType_adfe6dd0f749268a438259c468bcf0f7a}\label{classstudentType_adfe6dd0f749268a438259c468bcf0f7a}} 
-double {\bfseries get\+GPA} () const
-\item 
-\mbox{\Hypertarget{classstudentType_a7a54825f0ed7e781dab031c3c39e82d4}\label{classstudentType_a7a54825f0ed7e781dab031c3c39e82d4}} 
-string {\bfseries get\+ID} () const
-\item 
-\mbox{\Hypertarget{classstudentType_a3432d83325c20c0c70f875cf0379de32}\label{classstudentType_a3432d83325c20c0c70f875cf0379de32}} 
-string {\bfseries get\+Classification} () const
-\item 
-\mbox{\Hypertarget{classstudentType_a951f2ab7dbb0e82eb7be7d3769e87d75}\label{classstudentType_a951f2ab7dbb0e82eb7be7d3769e87d75}} 
-{\bfseries student\+Type} (string f\+Name, string l\+Name)
-\item 
-\mbox{\Hypertarget{classstudentType_a0de8e7b9bef1e651066cb5e0b1cd25c4}\label{classstudentType_a0de8e7b9bef1e651066cb5e0b1cd25c4}} 
-{\bfseries student\+Type} (string f\+Name, string l\+Name, double student\+GPA, string student\+ID, string student\+CLS)
-\item 
-\mbox{\Hypertarget{classstudentType_ae43df6daf0e79ef681659d7ded9748e4}\label{classstudentType_ae43df6daf0e79ef681659d7ded9748e4}} 
-void {\bfseries print} () const
-\item 
-\mbox{\Hypertarget{classstudentType_a0be4fcdc243f92719807bb887546dc54}\label{classstudentType_a0be4fcdc243f92719807bb887546dc54}} 
-bool {\bfseries equal\+Data} (const \mbox{\hyperlink{classstudentType}{student\+Type}} \&another) const
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpersonType}{person\+Type}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classpersonType_a0bcd2c346da076368bbc204e77afb663}\label{classpersonType_a0bcd2c346da076368bbc204e77afb663}} 
@@ -102,5 +69,5 @@ bool {\bfseries equal\+Data} (const \mbox{\hyperlink{classpersonType}{person\+Ty
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-student\+Type.\+h\item 
-student\+Type.\+cpp\end{DoxyCompactItemize}
+person\+Type.\+h\item 
+person\+Type.\+cpp\end{DoxyCompactItemize}
