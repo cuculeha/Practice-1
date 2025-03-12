@@ -31,7 +31,7 @@ void personType :: setGender (char gen)	{
 
 void personType :: setFullName (string fN, string lN)
 {
-	fullName = fN + " " + lN;
+	fullName = getFName() + " " + getLName();
 }
 
 // Getters definition

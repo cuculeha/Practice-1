@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <string>
 #include "personType.h"
 #include "studentType.h"
 #include "professorType.h"
@@ -13,6 +14,8 @@ int main ()
   //professorType professor[5];
   
   string stringtoInput;
+  string fName;
+	string lName;
   double doubletoInput;
   char chartoInput;
   /*
@@ -50,12 +53,12 @@ int main ()
     {
       cout << "\nInput information for studentType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
-      getline (cin, stringtoInput);
-      student[i].setFName (stringtoInput);
+      getline (cin,fName);
+      student[i].setFName (fName);
       
       cout << "Last Name : ";
-      getline (cin, stringtoInput);
-      student[i].setLName (stringtoInput);
+      getline (cin, lName);
+      student[i].setLName (lName);
       
       cout << "Address   : ";
       getline (cin, stringtoInput);
@@ -87,6 +90,10 @@ int main ()
       cout << "Classification   : ";
       getline (cin, stringtoInput);
       student[i].setClassification (stringtoInput);
+
+
+		// set the first and last name
+		student[i].setFullName (fName, lName);
     }
 
 
@@ -156,12 +163,13 @@ system ("clear");
     cout << "------------------------------------------------------------\n";
   }
   */
-	
-	cout << "Full Names..\n";
+	// call sorting function
+	studentTypeName (student, 5);
+	cout << "Sorting Full Names of student type object..\n";
 	for (int i=0;  i < 5; i++)
   {
 	cout << "---- > studentType object\n";
-    student[i].getFullName();
+    cout << student[i].getFullName() << endl;
     cout << "------------------------------------------------------------\n";
   }
 	/*personTypeSort (person, 5);

@@ -65,9 +65,9 @@ void studentTypeSort ( studentType array[], int size)
 			}
 }
 
-/*
+
 // trying to sort personType using first and last name.
-void studentTypeSort ( studentType array[], int size)
+void studentTypeName ( studentType array[], int size)
 {
 	studentType temp;
 	int startScan;
@@ -77,15 +77,15 @@ void studentTypeSort ( studentType array[], int size)
 		for (startScan = 0; startScan < size -1 ; startScan ++ )
 			{
 				minIndex = startScan;
-				minString = array[startScan].getFName();
+				minString = array[startScan].getFullName();
 
 
 				for (int i = startScan + 1 ; i < size ; i++)
 					{
-						if (array[i].getFName() < minString)
+						if (array[i].getFullName() < minString)
 						{
 						minIndex = i;
-						minString = array[i].getFName ();
+						minString = array[i].getFullName ();
 						}
 					}
 
@@ -94,5 +94,3 @@ void studentTypeSort ( studentType array[], int size)
 				array[minIndex] = temp;
 			}
 }
-
-*/
