@@ -15,6 +15,7 @@ class personType
 	void setHeight (double ht );
 	void setDOB (string bdate);
 	void setGender ( char gen);
+	void setFullName (string fN, string lN);
 
 	// Getters
 	string getFName () const;
@@ -23,7 +24,8 @@ class personType
 	double getHeight () const;
 	string getDOB () const;
 	char getGender () const;
-	
+	string getFullName () const;
+
 	// Constructors
 	personType();
 	personType (string firstName, string lastName );
@@ -41,6 +43,7 @@ class personType
 	private:
 	string fName;
 	string lName;
+	string fullName;
 	string address;
 	double height;
 	string DOB;

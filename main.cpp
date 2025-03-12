@@ -8,14 +8,14 @@ using namespace std;
 
 int main ()
 {
-  personType person[5];
-  /*studentType student[5];
-  professorType professor[5]; */
+  // personType person[5];
+  studentType student[5];
+  //professorType professor[5];
   
   string stringtoInput;
   double doubletoInput;
   char chartoInput;
-  
+  /*
   for (int i =0 ; i < 5; i ++)
     {
       cout << "Input information for personType object [" << i + 1 <<"]\n";
@@ -44,9 +44,9 @@ int main ()
       cin.get (chartoInput);
       person[i].setGender (chartoInput);
       cin.ignore (100, '\n');
-    }
+    }*/
   
-  /*for (int i =0 ; i < 2; i ++)
+  for (int i =0 ; i < 5; i ++)
     {
       cout << "\nInput information for studentType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
@@ -90,7 +90,7 @@ int main ()
     }
 
 
-for (int i =0 ; i < 2; i ++)
+/*for (int i =0 ; i < 2; i ++)
     {
       cout << "\nInput information for professorType object [" << i + 1 <<"]\n";
       cout << "First Name : ";
@@ -135,32 +135,50 @@ for (int i =0 ; i < 2; i ++)
 system ("clear");
   // print all information
 	cout << "Before Sorting\n";
-  for (int i=0;  i < 5; i++)
+  /*for (int i=0;  i < 5; i++)
   {	
 	cout << "---- > personType object\n";
     person[i].print();
     cout << "------------------------------------------------------------\n";
-  }
-  /*for (int i=0;  i < 2; i++)
+  }*/
+
+  for (int i=0;  i < 5; i++)
   {
 	cout << "---- > studentType object\n";
     student[i].print();
     cout << "------------------------------------------------------------\n";
   }
-	for (int i=0;  i < 2; i++)
+
+	/*for (int i=0;  i < 2; i++)
   {
 	cout << "---- > professorType object\n";
     professor[i].print();
     cout << "------------------------------------------------------------\n";
   }
   */
-	cout << "Ater Sorting..\n";
-	personTypeSort (person, 5);
+	
+	cout << "Full Names..\n";
+	for (int i=0;  i < 5; i++)
+  {
+	cout << "---- > studentType object\n";
+    student[i].getFullName();
+    cout << "------------------------------------------------------------\n";
+  }
+	/*personTypeSort (person, 5);
 	for (int i=0;  i < 5; i++)
   {	
 	cout << "---- > personType object\n";
     person[i].print();
     cout << "------------------------------------------------------------\n";
   }	
+*/
+	/*studentTypeSort (student, 5);
+	for (int i = 0 ;  i < 5; i++)
+  {	
+	cout << "---- > studentType object\n";
+    student[i].print();
+    cout << "------------------------------------------------------------\n";
+  }
+*/
   return 0;
 }
